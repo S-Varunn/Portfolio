@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #0d1b2a;
+    color: #3d2314;
+    font-family: 'Cinzel Decorative', 'Rye', Georgia, serif;
+  }
+}
+
+/* Wanted Poster & One Piece Logo Font Classes */
+.font-wanted {
+  font-family: 'Rye', serif;
+}
+
+.font-parchment {
+  font-family: 'Cinzel Decorative', serif;
+}
+
+.font-stamp {
+  font-family: 'Special Elite', monospace;
+}
+
+/* Hide scrollbars for scrollable HUD containers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom Keyframe Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.97); }
+  to { opacity: 1; transform: scale(1.0); }
+}
+
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-spin-slow {
+  animation: spinSlow 22s linear infinite;
+}
+
+/* --- VINTAGE ANCIENT PARCHMENT PAPER & FILIGREE THEME STYLES --- */
+
+/* Main Parchment Scroll Container (Matching Reference Images 1, 2, 3) */
+.op-parchment-scroll {
+  background: linear-gradient(180deg, #f5e5c8 0%, #ebd7b3 40%, #e2c99f 100%);
+  border: 4px solid #3d2314;
+  color: #3d2314;
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.8), inset 0 0 35px rgba(92, 57, 30, 0.2);
+  position: relative;
+}
+
+/* Inset Filigree Double Border Ornament Frame */
+.op-filigree-frame {
+  position: relative;
+  border: 2px solid #5c391e;
+  padding: 4px;
+}
+
+.op-filigree-frame::before {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border: 1px dashed #7a4f2b;
+  pointer-events: none;
+}
+
+/* --- TORN PAPER EDGES & RIPPED PARCHMENT EFFECTS --- */
+
+/* Jagged Torn Paper Container (Cuts realistic torn paper edges along all 4 borders for sheets/modals) */
+.op-torn-paper {
+  clip-path: polygon(
+    0% 0.8%, 2.5% 0%, 5% 1.2%, 7.5% 0.2%, 10% 1.5%, 12.5% 0.1%, 15% 1.2%, 17.5% 0%, 20% 1.4%, 22.5% 0.2%, 25% 1.5%, 27.5% 0%, 30% 1.2%, 32.5% 0.3%, 35% 1.5%, 37.5% 0.1%, 40% 1.4%, 42.5% 0%, 45% 1.2%, 47.5% 0.2%, 50% 1.5%, 52.5% 0.1%, 55% 1.3%, 57.5% 0%, 60% 1.4%, 62.5% 0.2%, 65% 1.5%, 67.5% 0%, 70% 1.2%, 72.5% 0.3%, 75% 1.5%, 77.5% 0.1%, 80% 1.4%, 82.5% 0%, 85% 1.2%, 87.5% 0.2%, 90% 1.5%, 92.5% 0.1%, 95% 1.3%, 97.5% 0%, 100% 1.2%,
+    99.8% 2.5%, 100% 5%, 98.7% 7.5%, 100% 10%, 98.6% 12.5%, 100% 15%, 98.8% 17.5%, 100% 20%, 98.5% 22.5%, 100% 25%, 98.7% 27.5%, 100% 30%, 98.6% 32.5%, 100% 35%, 98.8% 37.5%, 100% 40%, 98.5% 42.5%, 100% 45%, 98.7% 47.5%, 100% 50%, 98.6% 52.5%, 100% 55%, 98.8% 57.5%, 100% 60%, 98.5% 62.5%, 100% 65%, 98.7% 67.5%, 100% 70%, 98.6% 72.5%, 100% 75%, 98.8% 77.5%, 100% 80%, 98.5% 82.5%, 100% 85%, 98.7% 87.5%, 100% 90%, 98.6% 92.5%, 100% 95%, 98.8% 97.5%, 100% 99.2%,
+    97.5% 100%, 95% 98.7%, 92.5% 100%, 90% 98.5%, 87.5% 99.8%, 85% 98.6%, 82.5% 100%, 80% 98.7%, 77.5% 99.9%, 75% 98.5%, 72.5% 100%, 70% 98.7%, 67.5% 99.8%, 65% 98.6%, 62.5% 100%, 60% 98.7%, 57.5% 99.9%, 55% 98.5%, 52.5% 100%, 50% 98.7%, 47.5% 99.8%, 45% 98.6%, 42.5% 100%, 40% 98.7%, 37.5% 99.9%, 35% 98.5%, 32.5% 100%, 30% 98.7%, 27.5% 99.8%, 25% 98.6%, 22.5% 100%, 20% 98.7%, 17.5% 99.9%, 15% 98.5%, 12.5% 100%, 10% 98.7%, 7.5% 99.8%, 5% 98.6%, 2.5% 100%, 0% 98.8%,
+    0.2% 97.5%, 0% 95%, 1.3% 92.5%, 0% 90%, 1.4% 87.5%, 0% 85%, 1.2% 82.5%, 0% 80%, 1.5% 77.5%, 0% 75%, 1.3% 72.5%, 0% 70%, 1.4% 67.5%, 0% 65%, 1.2% 62.5%, 0% 60%, 1.5% 57.5%, 0% 55%, 1.3% 52.5%, 0% 50%, 1.4% 47.5%, 0% 45%, 1.2% 42.5%, 0% 40%, 1.5% 37.5%, 0% 35%, 1.3% 32.5%, 0% 30%, 1.4% 27.5%, 0% 25%, 1.2% 22.5%, 0% 20%, 1.5% 17.5%, 0% 15%, 1.3% 12.5%, 0% 10%, 1.4% 7.5%, 0% 5%, 1.2% 2.5%
+  );
+  filter: drop-shadow(0 12px 25px rgba(0, 0, 0, 0.85));
+}
+
+/* CLEAN SIMPLE PARCHMENT BUTTONS - THIN SUBTLE BORDER */
+
+/* Golden Wanted Poster Button (Primary Action) */
+.op-btn-gold-parchment {
+  background: linear-gradient(180deg, #ebd08d 0%, #d8b15d 50%, #c49437 100%);
+  color: #2b1707;
+  border: 1px solid rgba(61, 35, 20, 0.4);
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(61, 35, 20, 0.25);
+  transition: all 0.2s ease;
+}
+
+.op-btn-gold-parchment:hover {
+  background: linear-gradient(180deg, #f2da9d 0%, #e2bd6b 50%, #d4a344 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(61, 35, 20, 0.35);
+}
+
+.op-btn-gold-parchment:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 5px rgba(61, 35, 20, 0.2);
+}
+
+/* Tan Parchment Button (Secondary Action) */
+.op-btn-tan-parchment {
+  background: linear-gradient(180deg, #f7ebd4 0%, #ebd3a8 50%, #dec08d 100%);
+  color: #3d2314;
+  border: 1px solid rgba(92, 57, 30, 0.35);
+  border-radius: 1rem;
+  box-shadow: 0 3px 8px rgba(61, 35, 20, 0.2);
+  transition: all 0.2s ease;
+}
+
+.op-btn-tan-parchment:hover {
+  background: linear-gradient(180deg, #fcf3e3 0%, #f0dcba 50%, #e8cc9c 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(61, 35, 20, 0.3);
+}
+
+.op-btn-tan-parchment:active {
+  transform: translateY(1px);
+}
+
+/* Wanted Crimson Red Button */
+.op-btn-crimson-parchment {
+  background: linear-gradient(180deg, #c93b3b 0%, #b02424 50%, #8c1717 100%);
+  color: #f7ebd4;
+  border: 1px solid rgba(61, 35, 20, 0.4);
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(140, 23, 23, 0.35);
+  transition: all 0.2s ease;
+}
+
+.op-btn-crimson-parchment:hover {
+  background: linear-gradient(180deg, #d94848 0%, #c02f2f 50%, #9e1c1c 100%);
+  transform: translateY(-2px);
+}
