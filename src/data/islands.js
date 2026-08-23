@@ -99,6 +99,7 @@ export const ISLANDS = [
     coordinates: { x: 62, y: 35, worldX: 14, worldZ: -12 },
     dockCoordinates: { worldX: 10.8, worldZ: -0.2, targetHeading: Math.PI },
     iconName: 'Clock',
+    iconImage: '/assets/islands/horai-icon.png',
     accentColor: '#0284c7',
     badgeText: 'Full-Stack & Multi-Channel AI',
     isFinal: false,
@@ -119,18 +120,17 @@ export const ISLANDS = [
         'TanStack Query',
         'Tailwind CSS'
       ],
-      summary: 'A full-stack collaborative timesheet and event staffing platform featuring an autonomous multi-channel AI assistant across WhatsApp (Baileys) and Discord (Discord.js). Features real-time session timers, driving & material expense tracking, tip allocations, and role-based data isolation for collaborator privacy.',
+      summary: 'Created as an Event and Staff Management platform designed to eliminate operational friction, increase financial transparency, and streamline expense tracking and payroll. During hectic event setups and busy schedules, event leads and staff rarely have time to open a dashboard—so Horai integrates an autonomous Natural Language AI Agent directly into Discord and WhatsApp. This enables teams to log shifts, submit travel expenses, check earnings, and manage payroll remotely on the go.',
       highlights: [
-        'Autonomous Multi-Channel AI Agent: Natural language timesheet management on WhatsApp & Discord using tool-calling function execution',
-        'Multi-Device WhatsApp Gateway: Real-time QR and 8-digit pairing code generation supporting linked device IDs (LID JIDs) and self-chat routing',
-        'Granular Role-Based Data Isolation (RBAC): Strict privacy filters ensuring collaborators only access personal records while organizers manage full payroll',
-        'Deterministic Offline Intelligence: Built-in fuzzy entity resolution and rule-based NLP parser ensuring zero downtime during LLM rate limits',
+        'Natural language timesheet management on WhatsApp & Discord using tool calling function execution',
+        'Granular Role Based Data Isolation (RBAC): Strict privacy filters ensuring collaborators only access personal records while organizers manage full payroll',
+        'Deterministic Offline Intelligence: Fuzzy entity resolution and rule based NLP parser ensuring zero downtime during LLM rate limits',
         'Comprehensive Payroll & Expense Engine: Dynamic calculations for hourly base pay, driving reimbursements, material expenses, and tips across events'
       ],
-      image: '/assets/islands/horai-preview.jpg',
       liveDemo: 'http://localhost:5173',
       github: 'https://github.com/S-Varunn/horai',
-      backendGithub: 'https://github.com/S-Varunn/horai-backend'
+      backendGithub: 'https://github.com/S-Varunn/horai-backend',
+      imagePlaceholder: 'Add image asset: /assets/islands/horai-preview.png'
     }
   },
   {
