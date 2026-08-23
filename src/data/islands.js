@@ -120,14 +120,14 @@ export const ISLANDS = [
         'TanStack Query',
         'Tailwind CSS'
       ],
-      summary: 'Created as an Event and Staff Management platform designed to eliminate operational friction, increase financial transparency, and streamline expense tracking and payroll. During hectic event setups and busy schedules, event leads and staff rarely have time to open a dashboard—so Horai integrates an autonomous Natural Language AI Agent directly into Discord and WhatsApp. This enables teams to log shifts, submit travel expenses, check earnings, and manage payroll remotely on the go.',
+      summary: 'Created as an Event and Staff Management platform designed to ease operation, while increasing financial transparency and payroll accuracy. During hectic event setups and busy schedules, event leads and staff rarely have time to open a dashboard—so Horai integrates an autonomous Natural Language AI Agent directly into Discord and WhatsApp. This enables teams to log shifts, submit expenses, check earnings, and manage payroll on the go.',
       highlights: [
         'Natural language timesheet management on WhatsApp & Discord using tool calling function execution',
         'Granular Role Based Data Isolation (RBAC): Strict privacy filters ensuring collaborators only access personal records while organizers manage full payroll',
         'Deterministic Offline Intelligence: Fuzzy entity resolution and rule based NLP parser ensuring zero downtime during LLM rate limits',
         'Comprehensive Payroll & Expense Engine: Dynamic calculations for hourly base pay, driving reimbursements, material expenses, and tips across events'
       ],
-      liveDemo: 'http://localhost:5173',
+      liveDemo: 'https://horai.netlify.app/',
       github: 'https://github.com/S-Varunn/horai',
       backendGithub: 'https://github.com/S-Varunn/horai-backend',
       imagePlaceholder: 'Add image asset: /assets/islands/horai-preview.png'
