@@ -92,31 +92,45 @@ export const ISLANDS = [
   },
   {
     id: 'water7',
-    name: 'Water 7 Capital of Water',
-    subtitle: 'Shipwright WebGL Studio',
+    name: 'Water 7 — Horai',
+    subtitle: 'Collaborative Timesheet Tracker & Multi-Channel Autonomous AI Agent',
     region: 'Grand Line',
     order: 4,
     coordinates: { x: 62, y: 35, worldX: 14, worldZ: -12 },
     dockCoordinates: { worldX: 10.8, worldZ: -0.2, targetHeading: Math.PI },
-    iconName: 'Hammer',
-    accentColor: '#06b6d4',
-    badgeText: 'Project #3',
+    iconName: 'Clock',
+    accentColor: '#0284c7',
+    badgeText: 'Full-Stack & Multi-Channel AI',
     isFinal: false,
     project: {
-      title: 'Pluton CAD - 3D Vessel Construction & Physics Simulator',
-      tagline: 'Crafting complex 3D structures with real-time shader simulation.',
-      type: 'WebGL & 3D Engineering Tool',
-      techStack: ['Three.js', 'WebGL', 'GLSL Shaders', 'React Three Fiber', 'Zustand'],
-      summary: 'An advanced web-based 3D CAD modeling suite allowing naval architects and 3D artists to construct, texture, light, and stress-test 3D vessel hulls inside the browser.',
-      highlights: [
-        'Procedural hull mesh generation with custom GLSL PBR materials',
-        'Hydrodynamic fluid stress visualization using GPGPU particle physics',
-        'OBJ/GLTF export engine for seamless 3D printing and game engine workflows',
-        'Undo/Redo state stack with efficient tree diffing'
+      title: 'Horai — Collaborative Timesheet & Autonomous AI Agent',
+      tagline: 'Autonomous event staffing, live session timers, collaborative payroll & multi-channel AI agents.',
+      type: 'Full-Stack Web App + Multi-Channel AI Agent (WhatsApp & Discord)',
+      techStack: [
+        'React 19',
+        'TypeScript',
+        'Node.js',
+        'Express',
+        'PostgreSQL',
+        'Knex',
+        'Baileys (WhatsApp)',
+        'Discord.js',
+        'Google Gemini / LLM',
+        'TanStack Query',
+        'Tailwind CSS'
       ],
-      liveDemo: 'https://example.com/water7-cad',
-      github: 'https://github.com/example/water7-studio',
-      imagePlaceholder: 'Add image asset: /assets/islands/water7-preview.png'
+      summary: 'A full-stack collaborative timesheet and event staffing platform featuring an autonomous multi-channel AI assistant across WhatsApp (Baileys) and Discord (Discord.js). Features real-time session timers, driving & material expense tracking, tip allocations, and role-based data isolation for collaborator privacy.',
+      highlights: [
+        'Autonomous Multi-Channel AI Agent: Natural language timesheet management on WhatsApp & Discord using tool-calling function execution',
+        'Multi-Device WhatsApp Gateway: Real-time QR and 8-digit pairing code generation supporting linked device IDs (LID JIDs) and self-chat routing',
+        'Granular Role-Based Data Isolation (RBAC): Strict privacy filters ensuring collaborators only access personal records while organizers manage full payroll',
+        'Deterministic Offline Intelligence: Built-in fuzzy entity resolution and rule-based NLP parser ensuring zero downtime during LLM rate limits',
+        'Comprehensive Payroll & Expense Engine: Dynamic calculations for hourly base pay, driving reimbursements, material expenses, and tips across events'
+      ],
+      image: '/assets/islands/horai-preview.jpg',
+      liveDemo: 'http://localhost:5173',
+      github: 'https://github.com/S-Varunn/horai',
+      backendGithub: 'https://github.com/S-Varunn/horai-backend'
     }
   },
   {
