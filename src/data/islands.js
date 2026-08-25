@@ -5,30 +5,74 @@ export const ISLANDS = [
   {
     id: 'foosha',
     name: 'Foosha Village',
-    subtitle: 'Dawn Island - The Beginning',
+    subtitle: 'Dawn Island — Origin & Voyage Log',
     region: 'East Blue',
     order: 1,
     coordinates: { x: 12, y: 70, worldX: -35, worldZ: 20 },
     dockCoordinates: { worldX: -38.2, worldZ: 31.8, targetHeading: Math.PI },
-    iconName: 'Ship',
+    iconName: 'Compass',
     accentColor: '#ef4444',
-    badgeText: 'Origin & Overview',
+    badgeText: 'Origin & Career Log',
     isFinal: false,
     project: {
-      title: 'Developer Journey & Core Philosophy',
-      tagline: 'Where the quest for full-stack mastery began.',
-      type: 'Personal Showcase / Overview',
-      techStack: ['React 19', 'Three.js', 'Tailwind CSS', 'Vite', 'Web Audio API'],
-      summary: 'An immersive introduction to my technical background, coding ethos, and architectural principles inspired by the adventurous spirit of the Straw Hat Pirates.',
-      highlights: [
-        'Interactive 3D WebGL Ocean Shader engine with dynamic wave physics',
-        'Custom modular architecture designed for high scalability and zero dependencies clutter',
-        'Accessible, high-contrast dark mode design system built with custom CSS variables',
-        'Audio-reactive soundscapes generated procedurally with Web Audio API'
+      title: 'Voyage Log: The Spark & The Enterprise Forge',
+      tagline: 'From IBM Hackathon React origins to Agentic AI and WebGPU systems at Zoho.',
+      type: 'Career Logbook & Origin Story',
+      techStack: ['React', 'Next.js', 'Svelte', 'Rust', 'WebGPU', 'Agentic AI', 'LLMs', 'SSR Optimization', 'TypeScript', 'Python'],
+      summary: 'A chronicle of how my engineering journey started and evolved. Sparked by winning 2nd place at an IBM Hackathon building a sustainable e-tagging React app, then forged over 2 years at Zoho Corporation architecting autonomous agent orchestration, WebGPU desktop components, and high-velocity SSR engines.',
+      origin: {
+        title: 'The Spark — IBM Hackathon',
+        award: '2nd Place Winner',
+        description: 'Where it all started. Dove into React to pitch and engineer a modern electronic tagging (e-tag / QR) web app for apparel—eliminating single-use retail garment tags and reducing waste. Taking 2nd place ignited an unyielding passion for reactive frontend architectures and solving real-world challenges.',
+        tags: ['React Genesis', 'Apparel E-Tag & QR', 'Waste Reduction', '2nd Place Winner']
+      },
+      zoho: {
+        company: 'Zoho Corporation',
+        role: 'Software Development Engineer',
+        period: 'June 2023 – July 2025',
+        location: 'Chennai, India',
+        achievements: [
+          {
+            title: 'Agentic AI Systems & Code Generation',
+            badge: 'Autonomous Agent',
+            description: 'Engineered the foundational orchestration layer for an autonomous web development agent. System parses natural language prompts to scaffold, resolve dependencies, and generate complete full-stack apps (React, Svelte, Next.js).',
+            tech: ['Agentic AI', 'React', 'Svelte', 'Next.js', 'Orchestration']
+          },
+          {
+            title: 'Yggdrasileval — LLM Evaluation Framework',
+            badge: '-20% Eval Time',
+            description: 'Built a configuration-driven evaluation framework for Large Language Models, slashing testing time by 20% through parallel execution pipelines and automated retry mechanisms.',
+            tech: ['LLM Eval', 'Parallelization', 'Python', 'Automated Retries']
+          },
+          {
+            title: 'UI Performance Optimization & Modern SSR',
+            badge: '98% Latency Drop',
+            description: 'Replaced legacy client-side rendering components with a high-speed Server-Side Rendering (SSR) pipeline, reducing frontend chart generation latency by 98%.',
+            tech: ['SSR Engine', 'Performance', 'Chart Rendering', 'Web Vitals']
+          },
+          {
+            title: 'Cross-Platform WebGPU & Rust Desktop Components',
+            badge: 'Hardware Accelerated',
+            description: 'Contributed to high-throughput cross-platform desktop UI components leveraging WebGPU compute pipelines and Rust for near-native fluid rendering.',
+            tech: ['Rust', 'WebGPU', 'Desktop Systems', 'Cross-Platform']
+          }
+        ]
+      },
+      metrics: [
+        { label: 'Chart Latency Reduced', value: '98%', icon: 'Zap' },
+        { label: 'LLM Testing Time Cut', value: '20%', icon: 'Timer' },
+        { label: 'Autonomous Web Agents', value: 'Full-Stack', icon: 'Bot' },
+        { label: 'IBM Hackathon Genesis', value: '2nd Place', icon: 'Trophy' }
       ],
-      liveDemo: 'https://github.com',
-      github: 'https://github.com',
-      imagePlaceholder: 'Add image asset: /assets/islands/foosha-preview.png'
+      highlights: [
+        'Agentic AI: Core orchestration layer generating full-stack React, Svelte, and Next.js applications from natural language prompts',
+        'Yggdrasileval: Config-driven evaluation framework for LLMs slashing testing turnaround by 20% with automated retries',
+        'UI Performance: Replaced legacy components with modern SSR architecture, reducing chart generation latency by 98%',
+        'Systems & Graphics: High-performance desktop UI components powered by WebGPU compute pipelines and Rust',
+        'Origin: Won 2nd Place at IBM Hackathon with sustainable React e-tag apparel web application'
+      ],
+      liveDemo: 'https://github.com/S-Varunn',
+      github: 'https://github.com/S-Varunn'
     }
   },
   {

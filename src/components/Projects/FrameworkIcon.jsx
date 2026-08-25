@@ -3,7 +3,16 @@ import React from 'react';
 export function FrameworkIcon({ tech, className = "w-4 h-4 mr-2 inline-block shrink-0" }) {
   const name = (tech || '').toLowerCase();
 
-  // React
+  // React & Next.js
+  if (name.includes('next')) {
+    return (
+      <svg className={className} viewBox="0 0 128 128">
+        <circle cx="64" cy="64" r="64" fill="#000000"/>
+        <path fill="#ffffff" d="M35.5 38h7v52h-7zm25.5 0h7v28.8l21.3-28.8h8.2L68 76.5l30 33.5h-8.8L68 85.5V110h-7z"/>
+      </svg>
+    );
+  }
+
   if (name.includes('react')) {
     return (
       <svg className={className} viewBox="-11.5 -10.23174 23 20.46348" fill="none">
@@ -13,6 +22,33 @@ export function FrameworkIcon({ tech, className = "w-4 h-4 mr-2 inline-block shr
           <ellipse rx="11" ry="4.2" transform="rotate(60)"/>
           <ellipse rx="11" ry="4.2" transform="rotate(120)"/>
         </g>
+      </svg>
+    );
+  }
+
+  // Svelte
+  if (name.includes('svelte')) {
+    return (
+      <svg className={className} viewBox="0 0 128 128">
+        <path fill="#FF3E00" d="M102.7 27.2C96.3 12.8 80.8 5.7 65.6 9.4c-9.1 2.2-16.7 8-21.7 15.8L27.6 51.5c-7.7 12.1-7.1 27.6 1.4 39.1 9.4 12.7 26.1 18.2 41.2 13.9 9.1-2.6 16.7-8.8 21.3-17.1l16.3-26.3c1.7-2.8.8-6.4-2-8.1-2.8-1.7-6.4-.8-8.1 2L81.4 81.3c-2.4 4.4-6.4 7.6-11.2 9-8.3 2.4-17.4-.7-22.6-7.7-4.7-6.3-5-14.8-.8-21.4l16.3-26.3c2.7-4.2 6.8-7.3 11.7-8.5 8.3-2 16.7 1.9 20.2 9.7 1.8 3.9 1.6 8.3-.4 12.1-.8 1.4-.4 3.2 1 4 1.4.8 3.2.4 4-.9 3.6-6.6 4-14.7 1.1-22.1z"/>
+      </svg>
+    );
+  }
+
+  // WebGPU / GPU / Graphics
+  if (name.includes('webgpu') || name.includes('gpu')) {
+    return (
+      <svg className={className} viewBox="0 0 24 24" fill="none" stroke="#2b1707" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="4" y="4" width="16" height="16" rx="2"/>
+        <rect x="9" y="9" width="6" height="6"/>
+        <line x1="9" y1="1" x2="9" y2="4"/>
+        <line x1="15" y1="1" x2="15" y2="4"/>
+        <line x1="9" y1="20" x2="9" y2="23"/>
+        <line x1="15" y1="20" x2="15" y2="23"/>
+        <line x1="20" y1="9" x2="23" y2="9"/>
+        <line x1="20" y1="14" x2="23" y2="14"/>
+        <line x1="1" y1="9" x2="4" y2="9"/>
+        <line x1="1" y1="14" x2="4" y2="14"/>
       </svg>
     );
   }

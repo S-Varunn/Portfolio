@@ -57,36 +57,25 @@ export const PROFILE_DATA = {
   // Experience Voyage Log
   experience: [
     {
-      period: '2024 - PRESENT',
-      role: 'Lead 3D & Full-Stack Architect',
-      company: 'Grand Line Creative Tech',
-      location: 'Remote',
+      period: 'JUNE 2023 - JULY 2025',
+      role: 'Software Development Engineer',
+      company: 'Zoho Corporation',
+      location: 'Chennai, India',
       highlights: [
-        'Architected high-performance WebGL 3D web applications visited by 500k+ monthly users.',
-        'Spearheaded frontend design system overhaul, reducing bundle sizes by 38%.',
-        'Mentored junior engineers and established zero-fluff code review standards.'
+        'Agentic AI Systems: Engineered the foundational orchestration layer for an autonomous web development agent, parsing user prompts to generate full-stack applications across React, Svelte, and Next.js.',
+        'Yggdrasileval: Built configuration-driven evaluation framework for LLMs, reducing model testing time by 20% through parallelization and automated retries.',
+        'UI Performance Optimization: Replaced legacy rendering components with a modern SSR solution, reducing frontend chart generation latency by 98%.',
+        'Desktop Components: Contributed to the creation of cross-platform Desktop Components with WebGPU using Rust.'
       ]
     },
     {
-      period: '2022 - 2024',
-      role: 'Senior Frontend Engineer',
-      company: 'Thousand Sunny Systems',
-      location: 'Tech Hub',
+      period: 'ORIGIN STORY',
+      role: '2nd Place Winner & Frontend Lead',
+      company: 'IBM Hackathon',
+      location: 'Hackathon',
       highlights: [
-        'Built real-time analytics dashboards using React, D3, and WebSocket pipelines.',
-        'Engineered accessible, zero-emoji UI components conforming to WCAG AAA benchmarks.',
-        'Accelerated page load speeds from 3.4s down to 0.8s for core SaaS products.'
-      ]
-    },
-    {
-      period: '2020 - 2022',
-      role: 'Full-Stack Developer',
-      company: 'East Blue Software Works',
-      location: 'On-site',
-      highlights: [
-        'Developed end-to-end e-commerce applications with Stripe payment integrations.',
-        'Authored robust unit and integration test suites reaching 92% coverage.',
-        'Collaborated closely with UI/UX designers to translate Figma comps into live code.'
+        'Pitched and created a modern electronic tagging (e-tag/QR) web application for apparel to eliminate single-use retail tags and minimize waste.',
+        'Learnt and mastered React during rapid development, winning 2nd Place overall and sparking enduring passion for modern web engineering.'
       ]
     }
   ],
